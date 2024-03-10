@@ -1,6 +1,6 @@
 
 const WeatherApp = {
-    apiKey: 'https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key}', 
+    apiKey: 'a4cd6ee4e32c49a4a0730214241003e3', 
 
     getWeatherData: async function(location) {
         try {
@@ -44,12 +44,11 @@ const WeatherApp = {
         } else if (temperature > 0) {
             return 'lightblue';
         } else {
-            return 'lightskyblue'; // Adjusted for better color representation
+            return 'lightskyblue'; 
         }
     }
 };
 
-// Event listener for enter key or a search button would be ideal
 document.getElementById("location-input").addEventListener('keypress', async (e) => {
     if (e.key === 'Enter') {
         const location = e.target.value;
@@ -63,4 +62,5 @@ document.getElementById("location-input").addEventListener('keypress', async (e)
         }
     }
 });
+
 

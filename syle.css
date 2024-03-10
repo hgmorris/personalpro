@@ -4,50 +4,40 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.location-input {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    background: #f9f9f9;
-}
-
-.weatherApp h1 {
+#weatherApp {
     text-align: center;
-    color: #333;
+    padding: 20px;
+
 }
 
-.location-input {
-    width: 100%;
+input[type="text"] {
     padding: 10px;
-    margin: 10px 0;
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#weather-data {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
     border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border-radius: 5px;
+    background: blue;
 }
 
-.weather-data {
-    padding: 10px;
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 4px;
-    color: #333;
+#weather-data h2, #weather-data p {
+    margin: 5px 0;
 }
 
-.weather-data h3 {
-    margin-top: 0;
+#weather-data-left, #weather-data-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Add some hover effects for buttons or inputs if you have them */
-input[type="text"]:hover, input[type="text"]:focus {
-    border-color: #bbb;
-}
-
-/* Responsive design adjustments */
-@media (max-width: 640px) {
-    #weatherApp {
-        margin: 10px;
-        padding: 10px;
-    }
+#weather-icon {
+    width: 100px;
+    height: 100px;
 }
