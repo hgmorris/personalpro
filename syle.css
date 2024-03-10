@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.location-input {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.weatherApp h1 {
+    text-align: center;
+    color: #333;
+}
+
+.location-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.weather-data {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #333;
+}
+
+.weather-data h3 {
+    margin-top: 0;
+}
+
+/* Add some hover effects for buttons or inputs if you have them */
+input[type="text"]:hover, input[type="text"]:focus {
+    border-color: #bbb;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 640px) {
+    #weatherApp {
+        margin: 10px;
+        padding: 10px;
+    }
+}
